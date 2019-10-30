@@ -15,8 +15,8 @@ LIC_FILES_CHKSUM = " \
 DEPENDS = "libsamplerate0 libsndfile1 readline"
 
 SRC_URI = "git://github.com/jackaudio/jack2.git"
-SRCREV = "37250ff470277f9947fbf3ba738f943053e30525"
-PV = "1.9.13"
+SRCREV = "a0de623b8b3a933f865f87af097cb4285d905b25"
+PV = "1.9.14"
 S = "${WORKDIR}/git"
 
 inherit waf pkgconfig
@@ -41,5 +41,6 @@ FILES_jack-server = " \
     ${bindir}/jackd \
 "
 FILES_jack-utils = "${bindir}/*"
+RDEPENDS_jack-utils += "python3-core"
 
 FILES_${PN}-doc += " ${datadir}/jack-audio-connection-kit/reference/html/* "

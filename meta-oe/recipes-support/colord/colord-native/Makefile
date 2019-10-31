@@ -28,19 +28,19 @@ LIBSOURCES = \
     lib/colord/cd-dom.c
 
 libcolord.so: $(LIBSOURCES)
-	$(CC) $(CFLAGS) $(LDFLAGS) -L$(DESTDIR) -fPIC -shared -Wl,-soname,$@ $^ -o $(DESTDIR)/$@
+	$(CC) $(CFLAGS) -L$(DESTDIR) -fPIC -shared -Wl,-soname,$@ $^ -o $(DESTDIR)/$@ $(LDFLAGS)
 
 cd_idt8.o: client/cd-it8.c
 	$(CC) $(CFLAGS) -c $^ -o $(DESTDIR)/$@
 
 cd_idt8: libcolord.so cd_idt8.o
-	$(CC) $(LDFLAGS) -L$(DESTDIR) -lcolord $(DESTDIR)/cd_idt8.o -o $(DESTDIR)/$@
+	$(CC) $(DESTDIR)/cd_idt8.o -o $(DESTDIR)/$@ -L$(DESTDIR) -lcolord $(LDFLAGS)
 
 cd_create_profile.o: client/cd-create-profile.c
 	$(CC) $(CFLAGS) -c $^ -o $(DESTDIR)/$@
 
 cd_create_profile: libcolord.so cd_create_profile.o
-	$(CC) $(LDFLAGS) -L$(DESTDIR) -lcolord $(DESTDIR)/cd_create_profile.o -o $(DESTDIR)/$@
+	$(CC) $(DESTDIR)/cd_create_profile.o -o $(DESTDIR)/$@ -L$(DESTDIR) -lcolord $(LDFLAGS)
 
 .PHONY: clean
 

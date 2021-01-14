@@ -20,8 +20,11 @@ inherit gnomebase gsettings itstool gnome-help gobject-introspection gtk-doc val
 
 REQUIRED_DISTRO_FEATURES = "x11"
 
-SRC_URI[archive.md5sum] = "438217bbbcf92a17c4f259b4a5426b03"
-SRC_URI[archive.sha256sum] = "6887554643c5b1b3862ac364d97b7b50224bff95e6758aeaa08f4a482b554197"
+SRC_URI[archive.sha256sum] = "0053853d2cd59cad8a1662f5b4fdcfab47b4c0940063bacd6790a9948642844d"
+
+# gobject-introspection is mandatory (tested) and cannot be configured
+REQUIRED_DISTRO_FEATURES += "gobject-introspection-data"
+UNKNOWN_CONFIGURE_WHITELIST_append = " introspection"
 
 GTKDOC_MESON_OPTION = "gtk_doc"
 

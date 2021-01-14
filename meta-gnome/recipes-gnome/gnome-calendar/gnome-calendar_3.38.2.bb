@@ -22,8 +22,8 @@ inherit gnomebase gsettings gtk-icon-cache gettext features_check upstream-versi
 
 REQUIRED_DISTRO_FEATURES = "x11"
 
-SRC_URI += "file://8be361b6ce8f0f8053e1609decbdbdc164ec8448.patch"
-SRC_URI[archive.sha256sum] = "7280880a082d631624d02a102dd547ceb59498da368311f3e49a06cff897f512"
+SRC_URI += "file://0001-project-Switch-to-libhandy-1.patch"
+SRC_URI[archive.sha256sum] = "d121bb34b08b6ea601f5dbba43a4b1613a6e5493fc0b1e2ecc90c666711a912d"
 
 FILES_${PN} += " \
     ${datadir}/gnome-shell \

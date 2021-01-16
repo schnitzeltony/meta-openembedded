@@ -18,8 +18,7 @@ DEPENDS += " \
     gnome-panel \
 "
 
-SRC_URI[archive.md5sum] = "690b0d78c7d9265183ef18387b12fa50"
-SRC_URI[archive.sha256sum] = "2dba9ea40f2da81c22954a8ccc29f8f1fa4ca8395a6bb552506635832751c1a7"
+SRC_URI[archive.sha256sum] = "953cdd14df11b60fe5cc9b564ff2b3d3c30e60c62a4e52b62417b2881bf6a1e4"
 
 do_install_append() {
     # no oe-layer has compiz -> remove dead session

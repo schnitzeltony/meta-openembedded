@@ -25,7 +25,7 @@ PACKAGECONFIG ??= "${@bb.utils.filter('DISTRO_FEATURES', 'systemd', d)}"
 # As soon as elogind is of interest this needs rework: meson option is combo
 PACKAGECONFIG[systemd] = "-Dlogind=libsystemd,-Dlogind=none,systemd"
 
-SRC_URI[archive.sha256sum] = "dd033d3f36ab070bc72317cf3045e5b4927765543f1bce7612b2c7f96595167a"
+SRC_URI[archive.sha256sum] = "d53b85dc1303a1b5ce1e421c1f5c6ac0b318e07cd9a95939d2e1f0959a5ed7d9"
 
 FILES_${PN} += " \
     ${datadir}/metainfo \

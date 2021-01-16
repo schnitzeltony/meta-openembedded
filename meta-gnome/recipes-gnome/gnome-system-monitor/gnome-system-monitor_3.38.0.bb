@@ -18,8 +18,7 @@ inherit gnomebase gsettings gnome-help itstool gtk-icon-cache features_check get
 
 REQUIRED_DISTRO_FEATURES = "x11 polkit"
 
-SRC_URI[archive.md5sum] = "b1443ab12c3b7bcca940d28754e5b948"
-SRC_URI[archive.sha256sum] = "866b47ab0f4c75b0ec57d6300337a7373463aaad5df95eddfe5354c22be7bca1"
+SRC_URI[archive.sha256sum] = "73bf7ab4d5503c2567d76f831c9ae3fe27c31495761889ad3b351ef4c068aff4"
 
 PACKAGECONFIG ??= "${@bb.utils.filter('DISTRO_FEATURES', 'systemd', d)}"
 PACKAGECONFIG[systemd] = "-Dsystemd=true, -Dsystemd=false, systemd"

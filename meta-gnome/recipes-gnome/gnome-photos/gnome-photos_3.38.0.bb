@@ -26,11 +26,11 @@ inherit gnomebase gettext upstream-version-is-even gnome-help features_check
 
 REQUIRED_DISTRO_FEATURES = "x11"
 
-SRC_URI[archive.md5sum] = "1dd0d477eac4707e8cfe9f35e26d1f29"
-SRC_URI[archive.sha256sum] = "3c59c76ef28618ec055a1799d1040287b90a0b021feb0a02b1eac28e9c2eb41a"
+SRC_URI[archive.sha256sum] = "667f39477579d577470740e01f37b05c62e461e6f6da6377724d8f3993e1c4c4"
 
 FILES_${PN} += " \
     ${datadir}/dbus-1 \
     ${datadir}/metainfo \
     ${datadir}/gnome-shell \
+    ${datadir}/tracker \
 "

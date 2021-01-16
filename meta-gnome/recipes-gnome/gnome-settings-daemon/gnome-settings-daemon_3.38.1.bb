@@ -24,8 +24,7 @@ DEPENDS = " \
 # all these are mandatory
 REQUIRED_DISTRO_FEATURES = "x11 polkit pulseaudio systemd gobject-introspection-data"
 
-SRC_URI[archive.md5sum] = "102dc488a6a726e4050cf5ab7e967e8d"
-SRC_URI[archive.sha256sum] = "3e33dbd319b562a5ab602dcab6de3ca81b85f8346672e90ec632b36bbf15ee4b"
+SRC_URI[archive.sha256sum] = "e28121d91af82a2efa88f166d0c1e306c591f62f01ef7f553d48b6c13f070164"
 
 UNKNOWN_CONFIGURE_WHITELIST = "introspection"
 

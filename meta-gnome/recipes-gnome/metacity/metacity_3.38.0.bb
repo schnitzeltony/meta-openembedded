@@ -13,6 +13,8 @@ DEPENDS = " \
     startup-notification \
     libcanberra \
     libgtop \
+    libxres \
+    libxpresent \
 "
 
 
@@ -21,8 +23,7 @@ REQUIRED_DISTRO_FEATURES = "x11"
 
 inherit gnomebase gsettings gettext upstream-version-is-even features_check
 
-SRC_URI[archive.md5sum] = "d1171705829bbebd42ac08ec49a9a90a"
-SRC_URI[archive.sha256sum] = "11f07693e2b266840759063a4bc807346070e8e7fec8f53cd0757f6662c1b323"
+SRC_URI[archive.sha256sum] = "81193121b0d85dc93fef5701c00d0caf5313d10d9b19008403a4286cb04e11ac"
 SRC_URI += "file://0001-drop-zenity-detection.patch"
 
 PACKAGECONFIG[xinerama] = "--enable-xinerama,--disable-xinerama,libxinerama"

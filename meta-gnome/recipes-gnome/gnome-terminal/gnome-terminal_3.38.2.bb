@@ -12,6 +12,7 @@ DEPENDS = " \
     intltool-native \
     yelp-tools-native \
     desktop-file-utils-native \
+    docbook-xsl-stylesheets-native \
     gtk+3 \
     gsettings-desktop-schemas \
     vte \
@@ -19,8 +20,7 @@ DEPENDS = " \
     libpcre2 \
 "
 
-SRC_URI[archive.md5sum] = "08150cbf2e23dd4f60f959a6eca8ef0c"
-SRC_URI[archive.sha256sum] = "41d1b6a3dc97c066e294acdb7f36931e81668638dcc92ffa25bca3ddebacdf46"
+SRC_URI[archive.sha256sum] = "27bddc9d0ba614c86e5ecb4f54c75ebc3415e2887acd91442057548fd3206618"
 SRC_URI += "file://0001-Add-W_EXITCODE-macro-for-non-glibc-systems.patch"
 
 EXTRA_OECONF += " \

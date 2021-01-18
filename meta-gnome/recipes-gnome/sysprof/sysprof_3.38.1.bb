@@ -14,12 +14,8 @@ DEPENDS += " \
     glib-2.0 \
 "
 
-SRC_URI[archive.md5sum] = "3956e82b8744715006dde59e0ce8910b"
-SRC_URI[archive.sha256sum] = "8670db4dacf7b219d30c575c465b17c8ed6724dbade347f2cde9548bff039108"
-SRC_URI += " \
-    file://0001-sysprof-Define-NT_GNU_BUILD_ID-if-undefined.patch \
-    file://0002-tests-use-G_GSIZE_FORMAT-instead-of-G_GUINT64_FORMAT.patch \
-"
+SRC_URI[archive.sha256sum] = "404e1a96cc075b3da25461c73ee43d17a85491e707c0434d215d0a77504851fc"
+SRC_URI += "file://0001-sysprof-Define-NT_GNU_BUILD_ID-if-undefined.patch"
 
 PACKAGECONFIG ?= "sysprofd libsysprof ${@bb.utils.contains_any('DISTRO_FEATURES', '${GTK3DISTROFEATURES}', 'gtk', '', d)}"
 PACKAGECONFIG[gtk] = "-Denable_gtk=true,-Denable_gtk=false,gtk+3 libdazzle"

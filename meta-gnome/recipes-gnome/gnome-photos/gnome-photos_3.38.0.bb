@@ -17,7 +17,7 @@ DEPENDS = " \
     libdazzle \
     libgdata \
     gfbgraph \
-    tracker \
+    tracker2 \
 "
 
 GNOMEBASEBUILDCLASS = "meson"

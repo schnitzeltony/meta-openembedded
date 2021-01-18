@@ -17,18 +17,22 @@ DEPENDS = " \
 
 inherit gnomebase gsettings gobject-introspection gtk-doc gettext features_check upstream-version-is-even mime-xdg
 
-SRC_URI[archive.md5sum] = "c3c8dbb90d8eeed6c127aa568e131395"
-SRC_URI[archive.sha256sum] = "b6cafc7ab1e70a64383de391b6097fcccbf36b208f8502d8c46423224fd30ef8"
+SRC_URI[archive.sha256sum] = "d09ceb54c274e50084c8757a73cd247fee5bde02a0b0d13733b0006d1a4196a6"
 
 REQUIRED_DISTRO_FEATURES = "x11"
 
 PACKAGECONFIG = "extensions"
 PACKAGECONFIG[extensions] = "-Dextensions=true,-Dextensions=false, gexiv2 gstreamer1.0-plugins-base"
 
+EXTRA_OEMESON += " \
+    -Dtests=none \
+"
+
 FILES_${PN} += " \
     ${datadir}/dbus-1 \
     ${datadir}/metainfo \
     ${datadir}/gnome-shell \
+    ${datadir}/tracker3 \
 "
 
 # mandatory - not checked during configuration:

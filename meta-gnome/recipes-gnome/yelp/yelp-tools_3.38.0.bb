@@ -13,8 +13,7 @@ DEPENDS += " \
     yelp-xsl \
 "
 
-SRC_URI[archive.md5sum] = "7856f9ad0492aaf9adf097f5058bfc2e"
-SRC_URI[archive.sha256sum] = "183856b5ed0b0bb2c05dd1204af023946ed436943e35e789afb0295e5e71e8f9"
+SRC_URI[archive.sha256sum] = "607ce4b3ee8517c42db924a01a78660a03317595c75825731ea86a920e2b04b0"
 
 RDEPENDS_${PN} += "yelp-xsl"
 

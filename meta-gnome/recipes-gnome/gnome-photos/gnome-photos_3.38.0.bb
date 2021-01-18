@@ -34,3 +34,5 @@ FILES_${PN} += " \
     ${datadir}/gnome-shell \
     ${datadir}/tracker \
 "
+
+RDEPENDS_${PN} = "tracker-miners2"

@@ -12,7 +12,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=cb901168715f4782a2b06c3ddaefa558"
 
 DEPENDS = "protobuf-native protobuf"
 
-SRCREV = "f20a3fa131c275a0e795d99a28f94b4dbbb5af26"
+SRCREV = "f224ab2eeb648a818eb20687d7150a285442c907"
 
 SRC_URI = "git://github.com/protobuf-c/protobuf-c.git \
            file://0001-avoid-race-condition.patch \

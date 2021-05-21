@@ -20,17 +20,17 @@ Signed-off-by: Chen Qi <Qi.Chen@windriver.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/Makefile.am b/Makefile.am
-index b0cb065..1608ae0 100644
+index c7339ef..882756d 100644
 --- a/Makefile.am
 +++ b/Makefile.am
-@@ -156,6 +156,7 @@ noinst_PROGRAMS += \
- t_generated_code2_cxx_generate_packed_data_SOURCES = \
+@@ -166,6 +166,7 @@ t_generated_code2_cxx_generate_packed_data_SOURCES = \
  	t/generated-code2/cxx-generate-packed-data.cc \
- 	t/test-full.pb.cc
+ 	t/test-full.pb.cc \
+ 	protobuf-c/protobuf-c.pb.cc
 +t/generated-code2/cxx-generate-packed-data.cc: t/test-full.pb.h
  $(t_generated_code2_cxx_generate_packed_data_OBJECTS): t/test-full.pb.h
  t_generated_code2_cxx_generate_packed_data_CXXFLAGS = \
  	$(AM_CXXFLAGS) \
 -- 
-2.17.1
+2.31.1
 

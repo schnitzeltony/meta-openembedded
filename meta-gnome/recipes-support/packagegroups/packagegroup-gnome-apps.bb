@@ -17,6 +17,7 @@ RDEPENDS_${PN} = " \
     gnome-font-viewer \
     gnome-photos \
     gnome-terminal \
+    gthumb \
     libwnck3 \
     nautilus \
     ${@bb.utils.contains('DISTRO_FEATURES', 'polkit', 'gnome-system-monitor gnome-disk-utility', '', d)} \
